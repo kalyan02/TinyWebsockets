@@ -1,6 +1,7 @@
 #pragma once
 
 #include <tiny_websockets/ws_config_defs.hpp>
+#include <cstdint>
 #include <string>
 
 // Versioning
