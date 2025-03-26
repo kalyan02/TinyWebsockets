@@ -29,7 +29,7 @@ int main() {
     std::cout << "Got Data: " << message.data() << std::endl;
   });
 
-  client.onEvent([&](websockets::WebsocketsEvent event, std::string data) {
+  client.onEvent([&](websockets::WebsocketsEvent event, std::string) {
     if (event == websockets::WebsocketsEvent::ConnectionOpened) {
       std::cout << "WebsocketsEvent ConnectionOpened\n";
     } else if (event == websockets::WebsocketsEvent::ConnectionClosed) {
